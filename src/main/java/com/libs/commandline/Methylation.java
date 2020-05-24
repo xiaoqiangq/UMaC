@@ -29,8 +29,8 @@ public class Methylation {
         String usage = "\nCommandLine\n";
         usage = usage + "\nUsage: java -jar *.jar <COMMAND>[OPTIONS] \n" +
                 "java -Xmx4g -jar *.jar extract -I *.bam -O *.txt # -Ref * -Tumor * -TFx 0.05 -Cutoff 2  -Window *.format \n"+
-                "java -Xmx4g -jar *.jar saveRef -I *LD.gz -O * # -Min 50 -Max 300 \n" +
-                "java -Xmx4g -jar *.jar saveTumor -I *LD.gz -O * # -Min 50 -Max 300 \n" ;//+
+                "java -Xmx4g -jar *.jar saveRef -I *LD.gz -O * # -Min 50 -Max 1000 \n" +
+                "java -Xmx4g -jar *.jar saveTumor -I *LD.gz -O * # -Min 50 -Max 1000 \n" ;//+
         //"java -Xmx4g -jar *.jar segment -I *rate.gz -Window *.format -O *.wig \n" ;
 
         String cmd;
@@ -269,13 +269,13 @@ public class Methylation {
             options.addOption(output);
 
             Option min = Option.builder("Min").argName("int").hasArg()
-                    .desc("depth min for each CpG sites")
+                    .desc("depth min for each CpG sites, default 30")
                     .longOpt("min")
                     .build();
             options.addOption(min);
 
             Option max = Option.builder("Max").argName("int").hasArg()
-                    .desc("depth max for each CpG sites")
+                    .desc("depth max for each CpG sites, default 1000")
                     .longOpt("max")
                     .build();
             options.addOption(max);
@@ -342,7 +342,7 @@ public class Methylation {
             options.addOption(tumorMethyRate);
 
             Option cutoff = Option.builder("Cutoff").argName("int").hasArg()
-                    .desc("cut off the number of reads' CpG sites, default 2")
+                    .desc("cut off the number of reads' CpG sites, default 0")
                     .longOpt("cutoff")
                     .build();
             options.addOption(cutoff);
