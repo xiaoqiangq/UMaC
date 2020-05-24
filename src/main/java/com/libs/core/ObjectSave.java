@@ -19,8 +19,8 @@ public class ObjectSave
     private final File input;
     private final String cmd;
 
-    private int min = 50;
-    private int max = 300;
+    private int min = 30;
+    private int max = 1000;
 
     public ObjectSave(Properties properties, String cmd)
     {
@@ -50,9 +50,7 @@ public class ObjectSave
             os.writeObject(hashMethyRate);
 
             os.close();
-
         }
         //System.out.println("normal file readed finished");
-
     }
 }

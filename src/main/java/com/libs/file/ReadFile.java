@@ -16,8 +16,8 @@ public class ReadFile
     private final String cmd;
     private final String interval;
 
-    private int min = 50;
-    private int max = 800;
+    private int min = 30;
+    private int max = 1000;
 
     public ReadFile(File path, String cmd, String interval) {
         this.path = path;
