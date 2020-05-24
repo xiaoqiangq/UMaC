@@ -41,7 +41,6 @@ public class Extract
 
     private int referenceIndex = 0; //"chr1" or "1"
 
-
     public Extract (Properties properties)
     {
         this.input = new File(properties.getProperty("input"));
@@ -180,7 +179,6 @@ public class Extract
             {
                 iterator = reader.query("1",0,0,false);
             }
-
 
             List<Double> tumorNorPro;
             int flag;
@@ -494,15 +492,14 @@ public class Extract
 
 
                 if (tumorReads + normalReads == 0) {
-                    bw.write(str_split[0] + "\t" + str_split[1] + "\t" + str_split[2] + "\t" + str_split[3] + "\t" + 0 + "\t" + 0 + "\t" + 0 + "\n");
+                    bw.write(str_split[0] + "\t" + str_split[1] + "\t" + str_split[2] + "\t" + str_split[3] + "\t" + str_split[4] + "\t" + 0 + "\t" + 0 + "\t" + 0 + "\n");
                 } else {
                     int d1 = (int) tumorReads;
                     int d2 = (int) normalReads;
                     double ratio = tumorReads / (tumorReads + normalReads);
 
-                    bw.write(str_split[0] + "\t" + str_split[1] + "\t" + str_split[2] + "\t" + str_split[3] + "\t" + d1 + "\t" + d2 + "\t" + ratio + "\n");
+                    bw.write(str_split[0] + "\t" + str_split[1] + "\t" + str_split[2] + "\t" + str_split[3] + "\t" + str_split[4] + "\t" + d1 + "\t" + d2 + "\t" + ratio + "\n");
                 }
-
             }
         }
 
@@ -741,18 +738,18 @@ public class Extract
             if (segment == null)
             {
                 segment = new ArrayList<String>();
-                segment.add(chrom+":"+start+":"+end+":"+str_split[3]);
+                segment.add(chrom+":"+start+":"+end+":"+str_split[3]+":"+str_split[4]);
                 chromTemp = chrom;
 
             }else if (chromTemp.equals(chrom))
             {
-                segment.add(chrom+":"+start+":"+end+":"+str_split[3]);
+                segment.add(chrom+":"+start+":"+end+":"+str_split[3]+":"+str_split[4]);
             }else
             {
                 segments.add(segment);
 
                 segment = new ArrayList<String>();
-                segment.add(chrom+":"+start+":"+end+":"+str_split[3]);
+                segment.add(chrom+":"+start+":"+end+":"+str_split[3]+":"+str_split[4]);
                 chromTemp = chrom;
             }
         }
