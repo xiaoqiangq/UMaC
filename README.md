@@ -8,7 +8,7 @@ uMaC is a new computational method that unifies two orthogonal pieces of informa
 ## Description
 uMaC is a two-component framework, in which the first component models methylation changes, and the second one models CNAs, sequentially. Briefly, the methylation-component implements a Bayesian model to enrich ctDNA fragments from cfDNA data, based on distinct haplotypic methylation patterns in tumor vs. normal cfDNA; the CNA-component implements a hidden Markov model (HMM) to detect CNAs based on sequencing depth profiles in data with enriched ctDNA fragments.
 
-The Bayes and HMM model are described in: A computational framework to unify orthogonal information in DNA methylation and copy number aberrations in cell-free DNA for cancer detection. 
+The Bayes model and HMM model are described in: A computational framework to unify orthogonal information in DNA methylation and copy number aberrations in cell-free DNA for cancer detection. 
 
 **1. Methylation component**
 
