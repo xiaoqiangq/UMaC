@@ -16,7 +16,7 @@ The Bayes and HMM model are described in: A computational framework to unify ort
 
 **2. CNA component**
 
-    Rscript R/MethyCNA.R --id HCS-1070  --BED HCS-1070.bed  --outDir normalization
+    Rscript R/uMaC.R --id HCS-1070  --BED HCS-1070.bed  --outDir normalization
 
 ## Contacts
 If you have any questions or feedback, please contact us at:  
