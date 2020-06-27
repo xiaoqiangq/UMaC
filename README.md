@@ -1,6 +1,10 @@
 # *uMaC*
 uMaC is a new computational method that unifies two orthogonal pieces of information, i.e. methylation and CNAs, derived from whole-genome bisulfite sequencing (WGBS) data to estimating enriched ctDNA fragments' tumor fraction from cell-free DNA (cfDNA).
 
+## uMaC Wiki Page
+**For more details on usage/pipelines, outputs, and FAQs, please visit the [GitHub Wiki page for uMaC]
+(https://github.com/xiaoqiangq/uMaC/wiki)**
+
 ## Description
 uMaC is a two-component framework, in which the first component models methylation changes, and the second one models CNAs, sequentially. Briefly, the methylation-component implements a Bayesian model to enrich ctDNA fragments from cfDNA data, based on distinct haplotypic methylation patterns in tumor vs. normal cfDNA; the CNA-component implements a hidden Markov model (HMM) to detect CNAs based on sequencing depth profiles in data with enriched ctDNA fragments.
 
