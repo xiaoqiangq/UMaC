@@ -2,7 +2,7 @@
 uMaC is a new computational method that unifies two orthogonal pieces of information, i.e. methylation and CNAs, derived from whole-genome bisulfite sequencing (WGBS) data to estimating enriched ctDNA fragments' tumor fraction from cell-free DNA (cfDNA).
 
 ## uMaC Wiki Page
-**For more details on usage/pipelines, outputs, and FAQs, please visit the [GitHub Wiki page for uMaC]
+**For more details on usage and outputs, please visit the [GitHub Wiki page for uMaC]
 (https://github.com/xiaoqiangq/uMaC/wiki)**
 
 ## Description
