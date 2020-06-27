@@ -3,10 +3,11 @@
 #               Vanderbilt Genetics Institute
 # contact: <qiang.wei@vanderbilt.edu>
 #
+# need some R packages
 # ichorCNA: https://github.com/broadinstitute/ichorCNA
 # HMMcopy website: http://compbio.bccrc.ca/software/hmmcopy/ and https://www.bioconductor.org/packages/release/bioc/html/HMMcopy.html
 # date:   June 24, 2019
-# description: Hidden Markov model (HMM) to analyze target methylation sequencing data.
+# description: A hidden Markov model (HMM) to detect CNAs based on sequencing depth profiles in data with enriched ctDNA fragments
 
 library(optparse);
 
@@ -36,7 +37,7 @@ option_list <- list(
 	make_option(c("--includeHOMD"), type="logical", default=FALSE, help="If FALSE, then exclude HOMD state. Useful when using large bins (e.g. 1Mb). Default: [%default]"),
 	make_option(c("--genomeBuild"), type="character", default="hg19", help="Geome build. Default: [%default]"),
 	make_option(c("--genomeStyle"), type = "character", default = "NCBI", help = "NCBI or UCSC chromosome naming convention; use UCSC if desired output is to have \"chr\" string. [Default: %default]"),
-	make_option(c("--libdir"), type = "character", default=NULL, help = "Script library path. Usually exclude this argument unless custom modifications have been made to the ichorCNA R package code and the user would like to source those R files. Default: [%default]")
+	make_option(c("--libdir"), type = "character", default=NULL, help = "Script library path. Usually exclude this argument unless custom modifications have been made to the uMaC R package code and the user would like to source those R files. Default: [%default]")
 )
 
 parseobj <- OptionParser(option_list=option_list)
