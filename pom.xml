@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.libs</groupId>
-    <artifactId>MethyCNA</artifactId>
+    <artifactId>UMaC</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <app.main.class>com.libs.commandline.Methylation</app.main.class>
+        <app.main.class>com.libs.commandline.UMaC</app.main.class>
     </properties>
 
     <dependencies>
