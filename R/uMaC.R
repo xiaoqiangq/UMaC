@@ -46,7 +46,7 @@ print(opt)
 options(scipen=0, stringsAsFactors=F)
 
 ##############
-library(mclust);
+#library(mclust);
 library(HMMcopy);
 library(GenomicRanges)
 library(GenomeInfoDb)
