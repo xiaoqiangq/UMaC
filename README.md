@@ -18,7 +18,7 @@ bam file is genereted by Bismark.
 
 **2. CNA component**
 
-#Install the ichorCNA v0.2.0 R package
+#need to install the ichorCNA v0.2.0 R package
 
     Rscript R/uMaC.R --id HCS-1070  --BED HCS-1070.bed  --outDir normalization
 
