@@ -13,6 +13,8 @@ The Bayes model and HMM model are described in: A computational framework to uni
 **1. Methylation component**
 
     java -Xmx4g -jar uMaC-1.0.jar extract -I HCS-1070.dedupped.bam -O HCS-1070.bed 
+    
+bam file is genereted by Bismark.    
 
 **2. CNA component**
 
