@@ -14,7 +14,7 @@ The Bayes model and HMM model are described in: A computational framework to uni
 
     java -Xmx4g -jar uMaC-1.0.jar extract -I HCS-1070.dedupped.bam -O HCS-1070.bed 
     
-bam file is genereted by Bismark.    
+bam file is genereted by Bismark mapping the reference genome hg19.    
 
 **2. CNA component**
 
