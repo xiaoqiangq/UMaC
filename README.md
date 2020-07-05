@@ -31,5 +31,11 @@ If you have any questions or feedback, please contact us at:
 uMaC is developed and maintained by Qiang Wei and Bingshan Li. 
 
 ## Software License
-uMaC
+uMaC Copyright (C) 2020 Li‘s Lab
+**1. Methylation component**
+
+The first program is free for non-commercial use without warranty. Please contact the authors for commercial use.
+
+**2. CNA component**
+The second program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
