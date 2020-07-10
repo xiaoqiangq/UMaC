@@ -3,9 +3,7 @@
 #               Vanderbilt Genetics Institute
 # contact: <qiang.wei@vanderbilt.edu>
 #
-# need some R packages
-# ichorCNA: https://github.com/broadinstitute/ichorCNA
-# HMMcopy website: http://compbio.bccrc.ca/software/hmmcopy/ and https://www.bioconductor.org/packages/release/bioc/html/HMMcopy.html
+# need ichorCNA R packages
 # date:   June 24, 2019
 # description: A hidden Markov model (HMM) to detect CNAs based on sequencing depth profiles in data with enriched ctDNA fragments
 
