@@ -196,11 +196,11 @@ public class Extract
                 flag = samRecord.getFlags();
                 String readName = samRecord.getReadName();
 
-                readName = readName.split("_")[0];
+                //readName = readName.split("_")[0];
                 //readName = readName.split("_")[2];
 
-                String[] readNames = readName.split(":");
-                readName = readNames[readNames.length-4]+":"+readNames[readNames.length-3]+":"+readNames[readNames.length-2]+":"+readNames[readNames.length-1];
+                //String[] readNames = readName.split(":");
+                //readName = readNames[readNames.length-4]+":"+readNames[readNames.length-3]+":"+readNames[readNames.length-2]+":"+readNames[readNames.length-1];
 
                 String str;
 
@@ -386,11 +386,11 @@ public class Extract
                     flag = samRecord.getFlags();
                     String readName = samRecord.getReadName();
 
-                    readName = readName.split("_")[0];
+                    //readName = readName.split("_")[0];
                     //readName = readName.split("_")[2];
 
-                    String[] readNames = readName.split(":");
-                    readName = readNames[readNames.length - 4] + ":" + readNames[readNames.length - 3] + ":" + readNames[readNames.length - 2] + ":" + readNames[readNames.length - 1];
+                    //String[] readNames = readName.split(":");
+                    //readName = readNames[readNames.length - 4] + ":" + readNames[readNames.length - 3] + ":" + readNames[readNames.length - 2] + ":" + readNames[readNames.length - 1];
 
                     String str;
 
