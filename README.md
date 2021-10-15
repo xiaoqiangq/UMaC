@@ -24,8 +24,8 @@ bam file is genereted by Bismark mapping the reference genome hg19.
 
 ## Contacts
 If you have any questions or feedback, please contact us at:  
-**Email:** <qiang.wei@vanderbilt.edu>  
-        <bingshan.li@vanderbilt.edu>
+**Email:** <qiang.wei@vanderbilt.edu>  OR  <bingshan.li@vanderbilt.edu>
+           
 **Google Group:** <https://groups.google.com/****>
 
 ## Acknowledgements
