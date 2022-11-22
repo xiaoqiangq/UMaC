@@ -28,6 +28,9 @@ If you have any questions or feedback, please contact us at:
            
 **Google Group:** <https://groups.google.com/****>
 
+## Publication
+The Bayes model and HMM model are described in: Wei, Q. et al. A computational framework to unify orthogonal information in DNA methylation and copy number aberrations in cell-free DNA for early cancer detection. Brief Bioinform 23, doi:10.1093/bib/bbac200 (2022).
+
 ## Acknowledgements
 uMaC is developed and maintained by Qiang Wei and Bingshan Li. 
 
